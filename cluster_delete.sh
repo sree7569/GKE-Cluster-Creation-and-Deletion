@@ -5,7 +5,6 @@ gcloud container clusters list
 
 echo "Please provide following details to delete Kubernetes cluster"
 
-#!/bin/bash/
 read -p "Enter Compute Engine zone (default us-east1-b): " z_name
 z_name=${z_name:-us-east1-b}
 gcloud config set compute/zone $z_name
